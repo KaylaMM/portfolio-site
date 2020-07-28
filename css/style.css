@@ -72,16 +72,17 @@ strong {
 
 .btn {
   display: inline-block;
-  padding: 0.5em 2.5em;
+  padding: 0.5em 1.5em;
   background: var(--clr-accent);
   color: var(--clr-dark);
   text-decoration: none;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
+  border-radius: 0.25em;
 }
 
 .btn:hover {
@@ -108,7 +109,7 @@ h3 {
 }
 
 .section__title {
-  margin-bottom: 0.25em;
+  margin-bottom: 1.5em;
 }
 
 .sectional__title--intro {
@@ -275,6 +276,7 @@ header {
     min-width: 250px;
     position: relative;
     z-index: 2;
+    border-radius: 0.25em;
   }
 
   .section__subtitle--intro {
@@ -346,12 +348,13 @@ header {
 
 .about-me__img {
   box-shadow: var(--bs);
+  border-radius: 0.25em;
 }
 
 @media (min-width: 600px) {
   .about-me {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 265px;
     grid-template-areas:
       "title img"
       "subtitle img"
@@ -456,19 +459,6 @@ header {
 }
 
 .social-list__link {
-  padding: 0.5em;
-}
-
-/* Individual portfolio item styles */
-
-.portfolio-item-individual {
-  padding: 0 2em 2em;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.portfolio__item-individual p {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 1.25em;
+  color: inherit;
 }
